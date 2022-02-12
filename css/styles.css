@@ -1,0 +1,243 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: "Raleway", sans-serif;
+    --ff-logo: "Oleo Script", cursiv;
+    --bc-dark: #2F303A;
+    --bc-light: #F5F4FA;
+    --bc-primary: #E5E5E5;
+    --color-primary: #757575;
+    --color-dark: #212121;
+    --color-light: #FFFFFF;
+    --bc-accent: #424242;
+    --color-accent: #2196F3;
+    --focus-button: #188CE8;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    color: var(--color-dark);
+    background-color: #FFFFFF;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+/*=== Forms ===*/
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: var(--ff-primary);
+    cursor: pointer;
+}
+
+/*=== Lists, links ===*/
+.list {
+    list-style: none;
+}
+
+.link,
+.link {
+    text-decoration: none;
+}
+
+/*=== Header ===*/
+.logo {
+    font-family: var(--ff-secondary);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.logo span {
+    color: var(--color-accent);
+}
+
+.logo {
+    color: var(--color-dark);
+}
+
+.header .link:hover,
+.header .link:focus {
+    color: var(--color-accent);
+}
+
+.nav-list-link {
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+}
+
+.contact-list-item .link {
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+}
+
+/*=== End of Header ===*/
+
+/*=== Footer ===*/
+
+.footer {
+    background-color: var(--bc-dark);
+}
+
+.logo-bottom {
+    color: var(--color-light);
+}
+
+.address {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--color-light);
+}
+
+.contact-list {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .list li:first-child .link {
+    color: var(--color-light);
+}
+
+.footer .list li:first-child .link:focus,
+.footer .list li:first-child .link:hover,
+.footer .link:focus,
+.footer .link:hover {
+    color: var(--color-accent);
+}
+
+/*=== End of Footer ===*/
+
+/*=== Hero ===*/
+.hero {
+    background-color: var(--bc-dark);
+    text-align: center;
+}
+
+.hero .hero-title {
+    color: var(--color-light);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero button {
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    font-weight: 700;
+    line-height: 1.88;
+}
+
+.hero button:hover,
+.hero button:focus {
+    background-color: var(--focus-button);
+}
+
+/*=== End of Hero ===*/
+
+/*=== Benefits ===*/
+.benefits-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+p {
+    color: var(--color-primary);
+}
+
+.list p {
+    color: var(--color-primary);
+    font-weight: normal;
+    line-height: 24px;
+}
+
+/*=== End of Benefits ===*/
+
+/*=== Our activities ===*/
+.activity-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+/*=== End of activity ===*/
+
+
+/*=== Our Team ===*/
+.our-team {
+    background-color: var(--bc-light);
+}
+
+.team-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.employees-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.employees-position {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+/*=== End of Team ===*/
+
+/*=== Portfolio ===*/
+.portfolio button {
+    background-color: var(--bc-light);
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.portfolio button:hover,
+.portfolio button:focus {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.site-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+}
+
+.site-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-primary);
+}
+
+/*=== End of Portfolio ===*/
