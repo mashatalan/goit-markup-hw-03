@@ -67,10 +67,7 @@ body {
 }
 
 .navigation .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 93px;
-
 }
 
 .header-container {
@@ -80,6 +77,8 @@ body {
 }
 
 .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC
 }
 
@@ -92,18 +91,16 @@ body {
     display: flex;
     align-items: center;
 
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 .nav-contact-list {
     display: flex;
     align-items: center;
-
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
+.nav-list-item {
+    letter-spacing: 0.02em;
+}
 
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
@@ -129,7 +126,7 @@ body {
 .button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -149,18 +146,17 @@ body {
 
 /*=== Header ===*/
 .logo {
+    display: inline-block;
+    color: var(--color-dark);
     font-family: var(--ff-secondary);
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
 }
 
 .logo span {
     color: var(--color-accent);
-}
-
-.logo {
-    color: var(--color-dark);
 }
 
 .header .link:hover,
@@ -170,14 +166,14 @@ body {
 
 .nav-list-link {
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-dark);
 }
 
 .contact-list-item .link {
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-primary);
 }
@@ -191,20 +187,21 @@ body {
 }
 
 .logo-bottom {
+    margin-bottom: 20px;
     color: var(--color-light);
 }
 
 .address {
     font-style: normal;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--color-light);
 }
 
 .contact-list {
     font-style: normal;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -222,11 +219,6 @@ body {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.logo-bottom {
-    display: block;
-    margin-bottom: 20px;
 }
 
 .footer-address {
@@ -259,7 +251,7 @@ body {
     color: var(--color-light);
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -300,7 +292,7 @@ h1 {
 .benefits-title {
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--color-dark);
 }
@@ -312,7 +304,8 @@ p {
 .list p {
     color: var(--color-primary);
     font-weight: normal;
-    line-height: 24px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 .benefits-list {
@@ -339,7 +332,7 @@ h3 {
 .activity-title {
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -353,6 +346,10 @@ h3 {
     margin-right: 30px;
 }
 
+.benefits-list-item {
+    width: 270px;
+}
+
 /*=== End of activity ===*/
 
 
@@ -364,14 +361,14 @@ h3 {
 .employees-title {
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
 }
 
 .employees-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
 }
 
@@ -383,7 +380,7 @@ h3 {
 .employees-position {
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     margin-top: 10px;
 }
@@ -399,6 +396,9 @@ h3 {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+
 }
 
 .employees-list-item:nth-child(4n) {
@@ -417,7 +417,7 @@ h3 {
     color: var(--color-dark);
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -437,7 +437,7 @@ h3 {
 .site-title {
     font-weight: bold;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-dark);
 }
@@ -445,7 +445,7 @@ h3 {
 .site-description {
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     color: var(--color-primary);
 }
 
@@ -490,9 +490,7 @@ h3 {
 }
 
 .tile {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    padding: 20px 24px;
 
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
