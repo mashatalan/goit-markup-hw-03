@@ -40,6 +40,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -59,19 +61,15 @@ body {
     padding-right: 15px;
 }
 
-.padding {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.activity .padding {
-    padding-top: 0;
-}
-
-.header {
+.navigation .logo {
     padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 25px;
+    margin-right: 93px;
 
 }
 
@@ -79,8 +77,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC
 }
 
 .navigation {
@@ -91,23 +91,26 @@ body {
 .nav-list {
     display: flex;
     align-items: center;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .nav-contact-list {
     display: flex;
     align-items: center;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
-.logo {
-    margin-right: 93px;
-}
 
 .nav-list-item:not(:last-child) {
-    margin-right: 51px;
+    margin-right: 50px;
 }
 
 .contact-list-item:not(:last-child) {
-    margin-right: 51px;
+    margin-right: 50px;
 }
 
 .visually-hidden {
@@ -221,28 +224,34 @@ body {
     padding-bottom: 60px;
 }
 
-.address-list {
-    margin-top: 20px;
+.logo-bottom {
+    display: block;
+    margin-bottom: 20px;
 }
 
 .footer-address {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .footer-mail {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
 }
 
-/*.logo-footer {*/
-/*    display: flex;*/
-/*}*/
+.logo-footer {
+    display: flex;
+}
+
 /*=== End of Footer ===*/
 
 /*=== Hero ===*/
+
 .hero {
     background-color: var(--bc-dark);
     text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
@@ -279,16 +288,9 @@ body {
     background-color: var(--focus-button);
 }
 
-.hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
 
 h1 {
     margin-bottom: 30px;
-}
-
-.hero-container {
 }
 
 /*=== End of Hero ===*/
@@ -323,22 +325,17 @@ p {
     margin-right: 30px;
 }
 
-.benefits-description {
-    width: 270px;
-}
-
 h3 {
     margin-bottom: 10px;
-}
-
-.item .list {
-    width: 270px;
-    padding-bottom: 26px;
 }
 
 /*=== End of Benefits ===*/
 
 /*=== Our activities ===*/
+.activity {
+    padding-top: 0;
+}
+
 .activity-title {
     font-weight: bold;
     font-size: 36px;
@@ -376,7 +373,11 @@ h3 {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    margin-top: 30px;
+}
+
+.container-employees {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .employees-position {
@@ -391,8 +392,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: -30px;
-    margin-bottom: -30px;
 }
 
 .employees-list-item {
@@ -400,7 +399,6 @@ h3 {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: #FFFFFF;
-    padding-bottom: 30px;
 }
 
 .employees-list-item:nth-child(4n) {
@@ -409,10 +407,6 @@ h3 {
 
 .employees h2 {
     margin-bottom: 50px;
-}
-
-.employees-photo {
-    width: 100%;
 }
 
 /*=== End of Employees ===*/
@@ -446,10 +440,6 @@ h3 {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--color-dark);
-
-    margin-bottom: 4px;
-    margin-right: 24px;
-    margin-left: 24px;
 }
 
 .site-description {
@@ -457,10 +447,6 @@ h3 {
     font-size: 16px;
     line-height: 30px;
     color: var(--color-primary);
-
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 20px;
 }
 
 .flex-button {
@@ -495,19 +481,26 @@ h3 {
     margin-bottom: 30px;
 }
 
-/*.hero {*/
-/*    padding-top: 94px;*/
-/*    padding-bottom: 94px;*/
-/*}*/
-.flex-button .button {
+.flex-button {
     margin-bottom: 50px;
+}
+
+.flex-button .button {
     padding: 6px 22px;
 }
 
-.flex-element,
-.employees-list-item {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 4px 4px;
+.tile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.site-title {
+    margin-bottom: 4px;
 }
 
 /*=== End of Portfolio ===*/
